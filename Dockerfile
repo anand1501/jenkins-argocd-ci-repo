@@ -1,4 +1,4 @@
-FROM python:3.9.2-buiiseye
+FROM python:3.9.23-trixie
 
 WORKDIR /app
 
