@@ -1,9 +1,9 @@
-FROM python:3.9-slim
+FROM python:3.9.20-bullseye
 
 WORKDIR /app
 
-COPY app.py app.py
+COPY app.py  app.py
 
-RUN pip install --no-cache-dir flask
+RUN pip install flask
 
-CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0" ]
+CMD [ "python3", "-m", "flask",  "run", "--host=0.0.0.0" ]
